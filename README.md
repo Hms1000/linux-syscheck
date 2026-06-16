@@ -4,7 +4,7 @@ A lightweight shell script designed to audit disk usage, memory usage and the us
 ## Features 
 * **Disk usage auditing:** Displays disk usage for a given path.
 * **User tracking:** Checks for the users currently logged into the session.
-* **Memory monitoring:**Displays current free and used system memory in human-readable format.
+* **Memory monitoring:** Displays current free and used system memory in human-readable format.
 
 ## Prerequisites
 
