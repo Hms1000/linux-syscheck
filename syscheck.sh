@@ -8,7 +8,8 @@ check_disk() {
 }
 
 check_users() {
-	who 
+	USERNAME="$1"
+	who | grep "^$USERNAME"
 }
 
 check_memory() {
@@ -16,5 +17,5 @@ check_memory() {
 }
 
 check_disk "/"
-check_users
+check_users "sammy"
 check_memory
