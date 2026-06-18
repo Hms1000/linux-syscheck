@@ -1,2 +1,22 @@
-2026-06-17 15:41:32 - Disk usage for /: 33%
-2026-06-17 15:42:21 - Disk usage for /: 33%
+2026-06-18 17:41:06 - Disk usage for /: 33%
+ 
+2026-06-18 17:41:06 - Logged in sessions for sammy:
+sammy    seat0        2026-06-18 16:47
+sammy    tty2         2026-06-18 16:47
+ 
+2026-06-18 17:41:06 - Memory usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.5Gi       2.8Gi       3.7Gi       487Mi       1.8Gi       4.7Gi
+Swap:          5.2Gi          0B       5.2Gi
+ 
+2026-06-18 17:41:24 - Disk usage for /: 33%
+ 
+2026-06-18 17:41:24 - Logged in sessions for sammy:
+sammy    seat0        2026-06-18 16:47
+sammy    tty2         2026-06-18 16:47
+ 
+2026-06-18 17:41:24 - Memory usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.5Gi       2.8Gi       3.7Gi       479Mi       1.8Gi       4.7Gi
+Swap:          5.2Gi          0B       5.2Gi
+ 

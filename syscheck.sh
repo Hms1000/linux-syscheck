@@ -7,15 +7,31 @@ check_disk() {
 	USAGE=$(df -h "$FILE_PATH" | grep "/$" | awk '{print $5}')
 	TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
 	echo "$TIMESTAMP - Disk usage for $FILE_PATH: $USAGE" >> syscheck.log
+	echo "$TIMESTAMP - Disk usage for $FILE_PATH: $USAGE"
+	echo " " >> syscheck.log
+	echo " " 
 }
 
 check_users() {
 	USERNAME="$1"
-	who | grep "^$USERNAME"
+	LOGGEDUSERS=$(who | grep "^$USERNAME")
+	TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
+	echo "$TIMESTAMP - Logged in sessions for $USERNAME:">> syscheck.log 
+	echo "$LOGGEDUSERS" >> syscheck.log
+	echo "$TIMESTAMP - Logged in sessions for $USERNAME:"
+       	echo "$LOGGEDUSERS"
+	echo " " >> syscheck.log
+        echo " "
 }
 
 check_memory() {
-	free -h 
+	RAM=$(free -h)
+	TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
+	echo "$TIMESTAMP - Memory usage:" >> syscheck.log
+	echo "$RAM" >> syscheck.log
+        echo "$TIMESTAMP - Memory usage:" 
+        echo "$RAM"       	
+	echo " " >> syscheck.log
 }
 
 check_disk "/"
