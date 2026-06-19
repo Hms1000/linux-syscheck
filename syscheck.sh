@@ -8,7 +8,6 @@ check_disk() {
 	TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
 	echo "$TIMESTAMP - Disk usage for $FILE_PATH: $USAGE" | tee -a syscheck.log
 	echo " " | tee -a syscheck.log
-	echo " " 
 }
 
 check_users() {
@@ -18,7 +17,6 @@ check_users() {
 	echo "$TIMESTAMP - Logged in sessions for $USERNAME:" | tee -a syscheck.log
 	echo "$LOGGEDUSERS" | tee -a syscheck.log
 	echo " " | tee -a syscheck.log
-    echo " "
 }
 
 check_memory() {

@@ -64,3 +64,14 @@ sammy    tty2         2026-06-19 16:30
 Mem:           7.5Gi       6.0Gi       778Mi       957Mi       1.9Gi       1.5Gi
 Swap:          5.2Gi        40Mi       5.1Gi
  
+2026-06-19 17:15:21 - Disk usage for /: 33%
+ 
+2026-06-19 17:15:22 - Logged in sessions for sammy:
+sammy    seat0        2026-06-19 16:30
+sammy    tty2         2026-06-19 16:30
+ 
+2026-06-19 17:15:22 - Memory usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.5Gi       6.3Gi       374Mi       924Mi       2.0Gi       1.2Gi
+Swap:          5.2Gi        40Mi       5.1Gi
+ 
