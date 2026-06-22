@@ -5,8 +5,9 @@ set -e
 check_disk() {
 	FILE_PATH="$1"
 	USAGE=$(df -h "$FILE_PATH" | grep "/$" | awk '{print $5}')
+	CLEAN_USAGE=$(echo "$USAGE" | sed s/%//)
 	TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
-	if [[ "$USAGE" -ge 95% ]];then
+	if [[ "$CLEAN_USAGE" -ge 95 ]];then
 		echo "$TIMESTAMP - Warning: Disk almost full $USAGE" | tee -a syscheck.log
 		exit
 	else
@@ -26,10 +27,10 @@ check_users() {
 
 check_memory() {
 	RAM=$(free -h)
-	LOWRAM=$(echo "$RAM" | grep "^Mem" | awk '{print $7}') 
+	AVAILABLE_MB=$(free -m | grep "^Mem" | awk '{print $7}') 
 	TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
-	if [[ "$LOWRAM" -le 1 ]];then
-		echo "$TIMESTAMP - Warning: Low Memory $LOWRAM" | tee -a syscheck.log
+	if [[ "$AVAILABLE_MB" -le 1000 ]];then
+		echo "$TIMESTAMP - Warning: Low Memory ${AVAILABLE_MB}MB available" | tee -a syscheck.log
         else
  		echo "$TIMESTAMP - Memory usage:" | tee -a syscheck.log
 		echo "$RAM" | tee -a syscheck.log

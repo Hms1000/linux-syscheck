@@ -10,3 +10,58 @@ sammy    tty2         2026-06-19 16:30
 Mem:           7.5Gi       5.6Gi       1.3Gi       801Mi       1.7Gi       2.0Gi
 Swap:          5.2Gi       668Mi       4.5Gi
  
+2026-06-22 15:38:54 - Disk usage for /: 33%
+ 
+2026-06-22 15:38:54 - Logged in sessions for sammy:
+sammy    seat0        2026-06-22 15:28
+sammy    tty2         2026-06-22 15:28
+ 
+2026-06-22 15:38:54 - Memory usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.5Gi       2.5Gi       4.0Gi       527Mi       1.8Gi       5.0Gi
+Swap:          5.2Gi          0B       5.2Gi
+ 
+2026-06-22 16:37:24 - Disk usage for /: 33%
+ 
+2026-06-22 16:37:24 - Logged in sessions for sammy:
+sammy    seat0        2026-06-22 15:28
+sammy    tty2         2026-06-22 15:28
+ 
+2026-06-22 16:37:24 - Memory usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.5Gi       2.6Gi       3.9Gi       523Mi       1.8Gi       4.9Gi
+Swap:          5.2Gi          0B       5.2Gi
+ 
+2026-06-22 16:40:48 - Disk usage for /: 33%
+ 
+2026-06-22 16:40:48 - Logged in sessions for sammy:
+sammy    seat0        2026-06-22 15:28
+sammy    tty2         2026-06-22 15:28
+ 
+2026-06-22 16:40:48 - Memory usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.5Gi       2.7Gi       3.9Gi       523Mi       1.8Gi       4.9Gi
+Swap:          5.2Gi          0B       5.2Gi
+ 
+2026-06-22 16:44:57 - Disk usage for /: 33%
+ 
+2026-06-22 16:44:57 - Logged in sessions for sammy:
+sammy    seat0        2026-06-22 15:28
+sammy    tty2         2026-06-22 15:28
+ 
+2026-06-22 16:44:57 - Memory usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.5Gi       2.7Gi       3.9Gi       523Mi       1.8Gi       4.9Gi
+Swap:          5.2Gi          0B       5.2Gi
+ 
+2026-06-22 16:55:06 - Disk usage for /: 33%
+ 
+2026-06-22 16:55:06 - Logged in sessions for sammy:
+sammy    seat0        2026-06-22 15:28
+sammy    tty2         2026-06-22 15:28
+ 
+2026-06-22 16:55:06 - Memory usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.5Gi       3.1Gi       3.4Gi       495Mi       1.7Gi       4.4Gi
+Swap:          5.2Gi          0B       5.2Gi
+ 
