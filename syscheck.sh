@@ -29,7 +29,7 @@ check_memory() {
 	RAM=$(free -h)
 	AVAILABLE_MB=$(free -m | grep "^Mem" | awk '{print $7}') 
 	TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
-	if [[ "$AVAILABLE_MB" -le 1000 ]];then
+       	if [[ "$AVAILABLE_MB" -le 1000 ]];then
 		echo "$TIMESTAMP - Warning: Low Memory ${AVAILABLE_MB}MB available" | tee -a syscheck.log
         else
  		echo "$TIMESTAMP - Memory usage:" | tee -a syscheck.log
@@ -38,7 +38,23 @@ check_memory() {
 	fi
 }
 
+check_service() {
+	SERVICE=$1
+	TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
+	if [[ -z "$SERVICE" ]];then
+		echo "$TIMESTAMP - Service Name Required" | tee -a syscheck.log
+	else
+		RUNNING=$(ps aux | grep "$SERVICE" | grep -v grep || true)
+		if [[ -z "$RUNNING" ]];then
+			echo "$TIMESTAMP - $SERVICE NOT RUNNING" | tee -a syscheck.log
+		else
+			echo "$TIMESTAMP - $SERVICE RUNNING" | tee -a syscheck.log
+			echo "" | tee -a syscheck.log
+		fi
+	fi
+}
 
 check_disk "/"
 check_users "sammy"
 check_memory
+check_service "ssh"
