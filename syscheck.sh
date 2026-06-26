@@ -4,6 +4,7 @@ set -e
 
 LOGFILE="$HOME/linux-syscheck/syscheck.log"
 
+# function to check disk usage
 check_disk() {
 	FILE_PATH="$1"
 	USAGE=$(df -h "$FILE_PATH" | grep "/$" | awk '{print $5}')
@@ -18,6 +19,7 @@ check_disk() {
 	fi
 }
 
+# function to check logged in users
 check_users() {
 	USERNAME="$1"
 	LOGGEDUSERS=$(who | grep "^$USERNAME")
@@ -27,6 +29,7 @@ check_users() {
 	echo " " | tee -a "$LOGFILE"
 }
 
+# function to check memory usage
 check_memory() {
 	RAM=$(free -h)
 	AVAILABLE_MB=$(free -m | grep "^Mem" | awk '{print $7}') 
@@ -40,6 +43,7 @@ check_memory() {
 	fi
 }
 
+# function to check running process
 check_process() {
 	PROCESS=$1
 	TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
@@ -56,6 +60,7 @@ check_process() {
 	fi
 }
 
+# required flags
 for arg in "$@";do
 	if [[ "$arg" == --disk ]];then
 		check_disk "/"
