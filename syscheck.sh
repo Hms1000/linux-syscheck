@@ -40,36 +40,36 @@ check_memory() {
 	fi
 }
 
-check_service() {
-	SERVICE=$1
+check_process() {
+	PROCESS=$1
 	TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
-	if [[ -z "$SERVICE" ]];then
+	if [[ -z "$PROCESS" ]];then
 		echo "$TIMESTAMP - Service Name Required" | tee -a "$LOGFILE"
 	else
-		RUNNING=$(ps aux | grep "$SERVICE" | grep -v grep || true)
+		RUNNING=$(ps aux | grep "$PROCESS" | grep -v grep || true)
 		if [[ -z "$RUNNING" ]];then
-			echo "$TIMESTAMP - $SERVICE NOT RUNNING" | tee -a "$LOGFILE"
+			echo "$TIMESTAMP - $PROCESS NOT RUNNING" | tee -a "$LOGFILE"
 		else
-			echo "$TIMESTAMP - $SERVICE RUNNING" | tee -a "$LOGFILE"
+			echo "$TIMESTAMP - $PROCESS RUNNING" | tee -a "$LOGFILE"
 			echo "" | tee -a "$LOGFILE"
 		fi
 	fi
 }
 
 for arg in "$@";do
-	if [[ "$arg" == --users ]];then
-		check_disk "sammy"
-	elif [[ "$arg" == --disk ]];then
-		check_users "/"
+	if [[ "$arg" == --disk ]];then
+		check_disk "/"
+	elif [[ "$arg" == --users ]];then
+		check_users "sammy"
 	elif [[ "$arg" == --memory ]];then
 		check_memory
-	elif [[ "$arg" == --service ]];then
-		check_service "ssh"
+	elif [[ "$arg" == --process ]];then
+		check_process "ssh"
 	elif [[ "$arg" == --all ]];then
 		check_disk "/"	
 		check_users "sammy"
 		check_memory 
-		check_service "ssh"
+		check_process "ssh"
 	else
 		echo "Invalid Entry"
 	fi
