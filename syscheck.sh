@@ -56,7 +56,21 @@ check_service() {
 	fi
 }
 
-check_disk "/"
-check_users "sammy"
-check_memory
-check_service "ssh"
+for arg in "$@";do
+	if [[ "$arg" == --users ]];then
+		check_disk "sammy"
+	elif [[ "$arg" == --disk ]];then
+		check_users "/"
+	elif [[ "$arg" == --memory ]];then
+		check_memory
+	elif [[ "$arg" == --service ]];then
+		check_service "ssh"
+	elif [[ "$arg" == --all ]];then
+		check_disk "/"	
+		check_users "sammy"
+		check_memory 
+		check_service "ssh"
+	else
+		echo "Invalid Entry"
+	fi
+done

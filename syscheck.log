@@ -194,3 +194,351 @@ Swap:          5.2Gi          0B       5.2Gi
  
 2026-06-24 18:19:10 - ssh RUNNING
 
+2026-06-24 18:30:01 - Disk usage for /: 34%
+ 
+2026-06-24 18:30:01 - Logged in sessions for sammy:
+sammy    seat0        2026-06-24 17:41
+sammy    tty2         2026-06-24 17:41
+ 
+2026-06-24 18:30:01 - Memory usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.5Gi       4.7Gi       1.2Gi       669Mi       2.5Gi       2.8Gi
+Swap:          5.2Gi          0B       5.2Gi
+ 
+2026-06-24 18:30:01 - ssh RUNNING
+
+2026-06-24 18:40:35 - Disk usage for /: 34%
+ 
+2026-06-24 18:40:35 - Logged in sessions for sammy:
+sammy    seat0        2026-06-24 17:41
+sammy    tty2         2026-06-24 17:41
+ 
+2026-06-24 18:40:35 - Memory usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.5Gi       4.8Gi       1.2Gi       657Mi       2.5Gi       2.8Gi
+Swap:          5.2Gi          0B       5.2Gi
+ 
+2026-06-24 18:40:35 - ssh RUNNING
+
+2026-06-24 18:45:01 - Disk usage for /: 34%
+ 
+2026-06-24 18:45:01 - Logged in sessions for sammy:
+sammy    seat0        2026-06-24 17:41
+sammy    tty2         2026-06-24 17:41
+ 
+2026-06-24 18:45:01 - Memory usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.5Gi       4.8Gi       1.2Gi       631Mi       2.5Gi       2.8Gi
+Swap:          5.2Gi          0B       5.2Gi
+ 
+2026-06-24 18:45:01 - ssh RUNNING
+
+2026-06-24 19:00:01 - Disk usage for /: 34%
+ 
+2026-06-24 19:00:01 - Logged in sessions for sammy:
+sammy    seat0        2026-06-24 17:41
+sammy    tty2         2026-06-24 17:41
+ 
+2026-06-24 19:00:01 - Memory usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.5Gi       5.8Gi       510Mi       715Mi       2.2Gi       1.7Gi
+Swap:          5.2Gi       512Ki       5.2Gi
+ 
+2026-06-24 19:00:01 - ssh RUNNING
+
+2026-06-24 19:15:01 - Disk usage for /: 34%
+ 
+2026-06-24 19:15:01 - Logged in sessions for sammy:
+sammy    seat0        2026-06-24 17:41
+sammy    tty2         2026-06-24 17:41
+ 
+2026-06-24 19:15:01 - Memory usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.5Gi       6.3Gi       206Mi       737Mi       2.0Gi       1.2Gi
+Swap:          5.2Gi       512Ki       5.2Gi
+ 
+2026-06-24 19:15:01 - ssh RUNNING
+
+2026-06-24 19:30:01 - Disk usage for /: 34%
+ 
+2026-06-24 19:30:01 - Logged in sessions for sammy:
+sammy    seat0        2026-06-24 17:41
+sammy    tty2         2026-06-24 17:41
+ 
+2026-06-24 19:30:01 - Memory usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.5Gi       6.5Gi       333Mi       671Mi       1.7Gi       1.0Gi
+Swap:          5.2Gi        71Mi       5.1Gi
+ 
+2026-06-24 19:30:01 - ssh RUNNING
+
+2026-06-24 19:45:01 - Disk usage for /: 34%
+ 
+2026-06-24 19:45:01 - Logged in sessions for sammy:
+sammy    seat0        2026-06-24 17:41
+sammy    tty2         2026-06-24 17:41
+ 
+2026-06-24 19:45:01 - Memory usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.5Gi       6.4Gi       401Mi       703Mi       1.7Gi       1.2Gi
+Swap:          5.2Gi        71Mi       5.1Gi
+ 
+2026-06-24 19:45:01 - ssh RUNNING
+
+2026-06-24 20:00:01 - Disk usage for /: 34%
+ 
+2026-06-24 20:00:01 - Logged in sessions for sammy:
+sammy    seat0        2026-06-24 17:41
+sammy    tty2         2026-06-24 17:41
+ 
+2026-06-24 20:00:01 - Memory usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.5Gi       6.2Gi       618Mi       693Mi       1.7Gi       1.3Gi
+Swap:          5.2Gi       265Mi       4.9Gi
+ 
+2026-06-24 20:00:01 - ssh RUNNING
+
+2026-06-25 06:00:01 - Disk usage for /: 34%
+ 
+2026-06-25 06:00:01 - Logged in sessions for sammy:
+sammy    seat0        2026-06-25 05:57
+sammy    tty2         2026-06-25 05:57
+ 
+2026-06-25 06:00:01 - Memory usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.5Gi       2.3Gi       4.4Gi       444Mi       1.6Gi       5.3Gi
+Swap:          5.2Gi          0B       5.2Gi
+ 
+2026-06-25 06:00:01 - ssh RUNNING
+
+2026-06-25 06:15:01 - Disk usage for /: 34%
+ 
+2026-06-25 06:15:01 - Logged in sessions for sammy:
+sammy    seat0        2026-06-25 05:57
+sammy    tty2         2026-06-25 05:57
+ 
+2026-06-25 06:15:01 - Memory usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.5Gi       3.5Gi       2.7Gi       538Mi       2.2Gi       4.1Gi
+Swap:          5.2Gi          0B       5.2Gi
+ 
+2026-06-25 06:15:01 - ssh RUNNING
+
+2026-06-25 06:30:01 - Disk usage for /: 34%
+ 
+2026-06-25 06:30:01 - Logged in sessions for sammy:
+sammy    seat0        2026-06-25 05:57
+sammy    tty2         2026-06-25 05:57
+ 
+2026-06-25 06:30:01 - Memory usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.5Gi       2.3Gi       3.9Gi       493Mi       2.1Gi       5.3Gi
+Swap:          5.2Gi          0B       5.2Gi
+ 
+2026-06-25 06:30:01 - ssh RUNNING
+
+2026-06-25 06:45:01 - Disk usage for /: 34%
+ 
+2026-06-25 06:45:01 - Logged in sessions for sammy:
+sammy    seat0        2026-06-25 05:57
+sammy    tty2         2026-06-25 05:57
+ 
+2026-06-25 06:45:01 - Memory usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.5Gi       2.9Gi       3.3Gi       578Mi       2.2Gi       4.6Gi
+Swap:          5.2Gi          0B       5.2Gi
+ 
+2026-06-25 06:45:01 - ssh RUNNING
+
+2026-06-25 07:00:01 - Disk usage for /: 34%
+ 
+2026-06-25 07:00:01 - Logged in sessions for sammy:
+sammy    seat0        2026-06-25 05:57
+sammy    tty2         2026-06-25 05:57
+ 
+2026-06-25 07:00:01 - Memory usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.5Gi       3.7Gi       2.4Gi       610Mi       2.3Gi       3.8Gi
+Swap:          5.2Gi          0B       5.2Gi
+ 
+2026-06-25 07:00:01 - ssh RUNNING
+
+2026-06-25 07:15:01 - Disk usage for /: 34%
+ 
+2026-06-25 07:15:01 - Logged in sessions for sammy:
+sammy    seat0        2026-06-25 05:57
+sammy    tty2         2026-06-25 05:57
+ 
+2026-06-25 07:15:01 - Memory usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.5Gi       4.0Gi       2.1Gi       605Mi       2.3Gi       3.6Gi
+Swap:          5.2Gi          0B       5.2Gi
+ 
+2026-06-25 07:15:01 - ssh RUNNING
+
+2026-06-25 07:30:01 - Disk usage for /: 34%
+ 
+2026-06-25 07:30:01 - Logged in sessions for sammy:
+sammy    seat0        2026-06-25 05:57
+sammy    tty2         2026-06-25 05:57
+ 
+2026-06-25 07:30:01 - Memory usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.5Gi       4.0Gi       2.1Gi       623Mi       2.3Gi       3.6Gi
+Swap:          5.2Gi          0B       5.2Gi
+ 
+2026-06-25 07:30:01 - ssh RUNNING
+
+2026-06-25 07:45:01 - Disk usage for /: 34%
+ 
+2026-06-25 07:45:01 - Logged in sessions for sammy:
+sammy    seat0        2026-06-25 05:57
+sammy    tty2         2026-06-25 05:57
+ 
+2026-06-25 07:45:01 - Memory usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.5Gi       4.4Gi       1.6Gi       603Mi       2.3Gi       3.1Gi
+Swap:          5.2Gi          0B       5.2Gi
+ 
+2026-06-25 07:45:01 - ssh RUNNING
+
+2026-06-25 08:00:01 - Disk usage for /: 34%
+ 
+2026-06-25 08:00:01 - Logged in sessions for sammy:
+sammy    seat0        2026-06-25 05:57
+sammy    tty2         2026-06-25 05:57
+ 
+2026-06-25 08:00:01 - Memory usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.5Gi       5.5Gi       592Mi       753Mi       2.5Gi       2.1Gi
+Swap:          5.2Gi          0B       5.2Gi
+ 
+2026-06-25 08:00:01 - ssh RUNNING
+
+2026-06-25 08:15:01 - Disk usage for /: 34%
+ 
+2026-06-25 08:15:01 - Logged in sessions for sammy:
+sammy    seat0        2026-06-25 05:57
+sammy    tty2         2026-06-25 05:57
+ 
+2026-06-25 08:15:01 - Memory usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.5Gi       5.4Gi       603Mi       732Mi       2.5Gi       2.1Gi
+Swap:          5.2Gi          0B       5.2Gi
+ 
+2026-06-25 08:15:01 - ssh RUNNING
+
+2026-06-25 11:30:01 - Disk usage for /: 34%
+ 
+2026-06-25 11:30:01 - Logged in sessions for sammy:
+sammy    seat0        2026-06-25 05:57
+sammy    tty2         2026-06-25 05:57
+ 
+2026-06-25 11:30:01 - Memory usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.5Gi       6.3Gi       608Mi       638Mi       1.5Gi       1.2Gi
+Swap:          5.2Gi       2.5Gi       2.7Gi
+ 
+2026-06-25 11:30:01 - ssh RUNNING
+
+2026-06-25 11:45:01 - Disk usage for /: 34%
+ 
+2026-06-25 11:45:01 - Logged in sessions for sammy:
+sammy    seat0        2026-06-25 05:57
+sammy    tty2         2026-06-25 05:57
+ 
+2026-06-25 11:45:01 - Memory usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.5Gi       6.5Gi       373Mi       614Mi       1.6Gi       1.1Gi
+Swap:          5.2Gi       2.4Gi       2.7Gi
+ 
+2026-06-25 11:45:01 - ssh RUNNING
+
+2026-06-25 12:00:01 - Disk usage for /: 34%
+ 
+2026-06-25 12:00:01 - Logged in sessions for sammy:
+sammy    seat0        2026-06-25 05:57
+sammy    tty2         2026-06-25 05:57
+ 
+2026-06-25 12:00:01 - Memory usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.5Gi       6.4Gi       502Mi       583Mi       1.5Gi       1.1Gi
+Swap:          5.2Gi       2.4Gi       2.7Gi
+ 
+2026-06-25 12:00:01 - ssh RUNNING
+
+2026-06-25 13:45:01 - Disk usage for /: 33%
+ 
+2026-06-25 14:00:01 - Disk usage for /: 33%
+ 
+2026-06-25 14:00:01 - Logged in sessions for sammy:
+sammy    seat0        2026-06-25 13:46
+sammy    tty2         2026-06-25 13:46
+ 
+2026-06-25 14:00:01 - Memory usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.5Gi       4.0Gi       2.4Gi       642Mi       2.1Gi       3.6Gi
+Swap:          5.2Gi          0B       5.2Gi
+ 
+2026-06-25 14:00:01 - ssh RUNNING
+
+2026-06-26 06:15:01 - Disk usage for /: 33%
+ 
+2026-06-26 06:15:01 - Logged in sessions for sammy:
+sammy    seat0        2026-06-26 06:03
+sammy    tty2         2026-06-26 06:03
+ 
+2026-06-26 06:15:01 - Memory usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.5Gi       3.9Gi       2.5Gi       663Mi       2.1Gi       3.7Gi
+Swap:          5.2Gi          0B       5.2Gi
+ 
+2026-06-26 06:15:01 - ssh RUNNING
+
+2026-06-26 06:41:20 - Disk usage for /: 33%
+ 
+2026-06-26 06:41:32 - Memory usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.5Gi       5.1Gi       1.2Gi       624Mi       2.1Gi       2.5Gi
+Swap:          5.2Gi          0B       5.2Gi
+ 
+2026-06-26 06:41:32 - Logged in sessions for sammy:
+sammy    seat0        2026-06-26 06:03
+sammy    tty2         2026-06-26 06:03
+ 
+2026-06-26 06:41:51 - Logged in sessions for :
+sammy    seat0        2026-06-26 06:03
+sammy    tty2         2026-06-26 06:03
+ 
+2026-06-26 06:41:51 - Memory usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.5Gi       5.1Gi       1.2Gi       624Mi       2.1Gi       2.5Gi
+Swap:          5.2Gi          0B       5.2Gi
+ 
+2026-06-26 06:41:51 - Service Name Required
+2026-06-26 06:44:40 - Logged in sessions for sammy:
+sammy    seat0        2026-06-26 06:03
+sammy    tty2         2026-06-26 06:03
+ 
+2026-06-26 06:44:40 - Disk usage for /: 33%
+ 
+2026-06-26 06:44:40 - Memory usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.5Gi       4.8Gi       1.5Gi       617Mi       2.1Gi       2.7Gi
+Swap:          5.2Gi          0B       5.2Gi
+ 
+2026-06-26 06:44:40 - ssh RUNNING
+
+2026-06-26 07:02:14 - Disk usage for /: 33%
+ 
+2026-06-26 07:02:14 - Logged in sessions for sammy:
+sammy    seat0        2026-06-26 06:03
+sammy    tty2         2026-06-26 06:03
+ 
+2026-06-26 07:02:14 - Memory usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.5Gi       4.9Gi       1.4Gi       659Mi       2.1Gi       2.6Gi
+Swap:          5.2Gi          0B       5.2Gi
+ 
+2026-06-26 07:02:14 - ssh RUNNING
+
