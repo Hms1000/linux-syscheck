@@ -1,20 +1,22 @@
 #!/bin/bash
 
+source ./syscheck.conf
+
 set -e 
 
 LOGFILE="$HOME/linux-syscheck/syscheck.log"
 
 # function to check disk usage
 check_disk() {
-	FILE_PATH="$1"
-	USAGE=$(df -h "$FILE_PATH" | grep "/$" | awk '{print $5}')
+	DISK_PATH="$1"
+	USAGE=$(df -h "$DISK_PATH" | grep "/$" | awk '{print $5}')
 	CLEAN_USAGE=$(echo "$USAGE" | sed s/%//)
 	TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
 	if [[ "$CLEAN_USAGE" -ge 95 ]];then
 		echo "$TIMESTAMP - Warning: Disk almost full $USAGE" | tee -a "$LOGFILE"
 		exit
 	else
-		echo "$TIMESTAMP - Disk usage for $FILE_PATH: $USAGE" | tee -a "$LOGFILE"
+		echo "$TIMESTAMP - Disk usage for $DISK_PATH: $USAGE" | tee -a "$LOGFILE"
 		echo " " | tee -a "$LOGFILE"
 	fi
 }
@@ -63,18 +65,18 @@ check_process() {
 # required flags
 for arg in "$@";do
 	if [[ "$arg" == --disk ]];then
-		check_disk "/"
+		check_disk "$DISK_PATH"
 	elif [[ "$arg" == --users ]];then
-		check_users "sammy"
+		check_users "$USERNAME"
 	elif [[ "$arg" == --memory ]];then
 		check_memory
 	elif [[ "$arg" == --process ]];then
-		check_process "ssh"
+		check_process "$PROCESS"
 	elif [[ "$arg" == --all ]];then
-		check_disk "/"	
-		check_users "sammy"
+		check_disk "$DISK_PATH"
+		check_users "$USERNAME"
 		check_memory 
-		check_process "ssh"
+		check_process "$PROCESS"
 	else
 		echo "Invalid Entry"
 	fi
