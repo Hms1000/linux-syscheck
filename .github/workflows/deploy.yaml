@@ -1,0 +1,51 @@
+name: ci/cd for syscheck
+on:
+    push:
+        branches:
+            - main
+    pull_request:
+        branches:
+            - main 
+jobs:
+    test:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v4
+            - name: Install shellcheck
+              run: sudo apt-get install shellcheck -y
+            - name: Run shellcheck
+              run: find . -name "*.sh" -exec shellcheck {} \;
+            - name: Validate syntax
+              run: find . -name "*.sh" -exec bash -n {} \;
+
+    build: 
+      needs: test 
+      runs-on: ubuntu-latest
+      steps:
+        - name: Checkout code
+          uses: actions/checkout@v4
+        - name: Build artifact
+          run: |
+            chmod +x syscheck.sh
+            tar -czf syscheck.tar.gz syscheck.sh syscheck.conf
+        - name: Upload artifact
+          uses: actions/upload-artifact@v4
+          with:
+            name: syscheck-artifact
+            path: syscheck.tar.gz
+    deploy:
+      needs: build
+      runs-on: ubuntu-latest
+      steps:
+        - name: Download artifact
+          uses: actions/download-artifact@v4
+          with:
+            name: syscheck-artifact
+        - name: Deploy to server
+          run: |  
+            echo "${{ secrets.SSH_PRIVATE_KEY }}" > private_key
+            chmod 600 private_key
+            scp -i private_key syscheck.tar.gz user@{{ $secrets.SERVER_IP}}:{{ $secrets.DEPLOY_PATH }}
+            ssh -i private_key user@{{ $secrets.SERVER_IP}} 'tar -xzf {{ $secrets.DEPLOY_PATH }}/syscheck.tar.gz -C {{ $secrets.DEPLOY_PATH }} && rm {{ $secrets.DEPLOY_PATH }}/syscheck.tar.gz'
+            rm private_key
