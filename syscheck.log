@@ -568,3 +568,49 @@ Swap:          5.2Gi          0B       5.2Gi
  
 2026-06-30 13:02:42 - ssh RUNNING
 
+2026-06-30 13:12:21 - Disk usage for /usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games: 
+ 
+2026-06-30 13:12:21 - Logged in sessions for sammy:
+sammy    seat0        2026-06-30 11:08
+sammy    tty2         2026-06-30 11:08
+ 
+2026-06-30 13:12:21 - Memory usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.5Gi       4.5Gi       1.8Gi       570Mi       2.1Gi       3.0Gi
+Swap:          5.2Gi          0B       5.2Gi
+ 
+2026-06-30 13:12:21 - ssh RUNNING
+
+2026-06-30 13:19:26 - ssh RUNNING
+
+2026-06-30 13:19:32 - ssh RUNNING
+
+2026-06-30 13:20:15 - ssh RUNNING
+
+2026-06-30 13:20:32 - ssh RUNNING
+
+2026-06-30 13:20:56 - ssh RUNNING
+
+2026-07-02 08:00:00 - nginx RUNNING
+
+2026-07-02 08:00:09 - ssh RUNNING
+
+2026-07-02 08:00:18 - Disk usage for /: 36%
+ 
+2026-07-02 08:00:25 - Disk usage for /: 36%
+ 
+2026-07-02 08:00:25 - Logged in sessions for sammy:
+sammy    seat0        2026-07-02 06:29
+sammy    tty2         2026-07-02 06:29
+ 
+2026-07-02 08:00:25 - Memory usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.5Gi       3.4Gi       2.6Gi       496Mi       2.3Gi       4.1Gi
+Swap:          5.2Gi          0B       5.2Gi
+ 
+2026-07-02 08:00:25 - ssh RUNNING
+
+2026-07-02 08:00:36 - Disk usage for /: 36%
+ 
+2026-07-02 08:00:36 - ssh RUNNING
+

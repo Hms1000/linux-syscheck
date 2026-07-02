@@ -63,21 +63,30 @@ check_process() {
 }
 
 # required flags
-for arg in "$@";do
-	if [[ "$arg" == --disk ]];then
-		check_disk "$DISK_PATH"
-	elif [[ "$arg" == --users ]];then
-		check_users "$USERNAME"
-	elif [[ "$arg" == --memory ]];then
-		check_memory
-	elif [[ "$arg" == --process ]];then
-		check_process "$PROCESS"
-	elif [[ "$arg" == --all ]];then
-		check_disk "$DISK_PATH"
-		check_users "$USERNAME"
-		check_memory 
-		check_process "$PROCESS"
-	else
-		echo "Invalid Entry"
-	fi
+while [[ "$#" -gt 0 ]];do
+	case "$1" in
+		--disk)
+			check_disk "$DISK_PATH"
+			;;
+		--users)
+			check_users "$USERNAME"
+			;;
+		--memory)
+			check_memory
+			;;
+		--process)
+			shift
+			check_process "$1"
+			;;
+		--all)
+			check_disk "$DISK_PATH"
+			check_users "$USERNAME"
+			check_memory 
+			check_process "$PROCESS"
+			;;
+		*)
+			echo "Invalid Entry"
+			;;
+	esac
+	shift
 done
