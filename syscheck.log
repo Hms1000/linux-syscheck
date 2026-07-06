@@ -614,3 +614,43 @@ Swap:          5.2Gi          0B       5.2Gi
  
 2026-07-02 08:00:36 - ssh RUNNING
 
+2026-07-06 07:21:58 - Disk usage for /: 36%
+ 
+2026-07-06 07:21:58 - Logged in sessions for sammy:
+sammy    seat0        2026-07-06 06:27
+sammy    tty2         2026-07-06 06:27
+ 
+2026-07-06 07:21:58 - Memory usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.5Gi       3.3Gi       3.1Gi       460Mi       1.9Gi       4.2Gi
+Swap:          5.2Gi          0B       5.2Gi
+ 
+2026-07-06 07:21:58 - ssh RUNNING
+
+2026-07-06 07:43:10 - Disk usage for /: 36%
+ 
+2026-07-06 07:43:10 - Logged in sessions for sammy:
+sammy    seat0        2026-07-06 06:27
+sammy    tty2         2026-07-06 06:27
+ 
+2026-07-06 07:43:10 - Memory usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.5Gi       3.5Gi       2.9Gi       577Mi       2.0Gi       4.1Gi
+Swap:          5.2Gi          0B       5.2Gi
+ 
+2026-07-06 07:43:10 - ssh RUNNING
+
+2026-07-06 07:46:40 - Disk usage for /: 36%
+ 
+2026-07-06 07:46:40 - Logged in sessions for sammy:
+sammy    seat0        2026-07-06 06:27
+sammy    tty2         2026-07-06 06:27
+ 
+2026-07-06 07:46:40 - Memory usage:
+               total        used        free      shared  buff/cache   available
+Mem:           7.5Gi       3.7Gi       2.7Gi       540Mi       2.0Gi       3.9Gi
+Swap:          5.2Gi          0B       5.2Gi
+ 
+2026-07-06 07:46:40 - ssh RUNNING
+
+2026-07-06 07:50:45 - Warning: Disk almost full 36%
