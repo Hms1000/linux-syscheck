@@ -13,7 +13,7 @@ check_disk() {
 	CLEAN_USAGE=$(echo "$USAGE" | sed s/%//)
 	TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
 	if [[ "$CLEAN_USAGE" -ge 95 ]];then
-		echo "$TIMESTAMP - Warning: Disk almost full $USAGE" | tee -a "$LOGFILE"
+		echo "$TIMESTAMP - Warning: Disk almost full $USAGE" | tee -a "$LOGFILE" | tee -a "$ALERTSLOG"
 		exit
 	else
 		echo "$TIMESTAMP - Disk usage for $DISK_PATH: $USAGE" | tee -a "$LOGFILE"
@@ -37,7 +37,7 @@ check_memory() {
 	AVAILABLE_MB=$(free -m | grep "^Mem" | awk '{print $7}') 
 	TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
        	if [[ "$AVAILABLE_MB" -le 1000 ]];then
-		echo "$TIMESTAMP - Warning: Low Memory ${AVAILABLE_MB}MB available" | tee -a "$LOGFILE"
+		echo "$TIMESTAMP - Warning: Low Memory ${AVAILABLE_MB}MB available" | tee -a "$LOGFILE" | tee -a "$ALERTSLOG"
         else
  		echo "$TIMESTAMP - Memory usage:" | tee -a "$LOGFILE"
 		echo "$RAM" | tee -a "$LOGFILE"
@@ -54,7 +54,7 @@ check_process() {
 	else
 		RUNNING=$(ps aux | grep "$PROCESS" | grep -v grep || true)
 		if [[ -z "$RUNNING" ]];then
-			echo "$TIMESTAMP - $PROCESS NOT RUNNING" | tee -a "$LOGFILE"
+			echo "$TIMESTAMP - $PROCESS NOT RUNNING" | tee -a "$LOGFILE" | tee -a "$ALERTSLOG"
 		else
 			echo "$TIMESTAMP - $PROCESS RUNNING" | tee -a "$LOGFILE"
 			echo "" | tee -a "$LOGFILE"
