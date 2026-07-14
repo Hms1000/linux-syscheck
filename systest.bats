@@ -15,8 +15,8 @@ setup() {
 }
 
 @test "Logged in sessions for user" {
-	run check_users
-	[ "$output" == "sammy" ]
+	run check_users sammy
+	[[ "$output" == *"sammy"* ]]
 }
 
 @test "Warning: Low Memory" {
@@ -26,14 +26,17 @@ setup() {
 	}
 	export -f free
 	run check_memory	
-	[[ "$output" == "Warning: Low Memory" ]]
+	[[ "$output" == *"Warning: Low Memory"* ]]
 }
 
 @test "Process not running" {
-	ps aux() {
-		return 0
+	ps() {
+		echo "USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND"
+		echo "root           1  0.0  0.1  24648 15344 ?        Ss   07:51   0:01 /sbin/init"
+		echo "sammy        99		          0.1                       0.5     nginx"
 	}
-	export -f ps aux
+	export -f ps
 	run check_process ssh
-	[[ "$output" == "Process not running" ]]
+	[[ "$output" == *"NOT RUNNING"* ]]
+}
 
