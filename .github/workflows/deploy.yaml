@@ -18,6 +18,10 @@ jobs:
               run: find . -name "*.sh" -exec shellcheck {} \;
             - name: Validate syntax
               run: find . -name "*.sh" -exec bash -n {} \;
+            - name: Install and run bats test
+              run: |
+                sudo apt-get update && sudo apt-get install bats -y
+                bats systest.bats
 
     build: 
       needs: test 
